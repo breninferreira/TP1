@@ -3,6 +3,9 @@
  ** author: Andrea Vedaldi
  **/
 
+/**
+Linhas alteradas ou criadas referentes a tarefa:18,21a24.
+**/
 #ifndef __ball__
 #define __ball__
 
@@ -11,10 +14,14 @@
 class Ball : public Simulation
 {
 public:
-  // Constructors and member functions
-  Ball() ;
+  // Constructors, member functions, get and set coordinates
+  Ball(double coordX, double coordY) ;
   void step(double dt) ;
   void display() ;
+  double getCoordx ();
+  void setCoordx(double x);
+  double getCoordy();
+  void setCoordy(double y);
 
 protected:
   // Data members
