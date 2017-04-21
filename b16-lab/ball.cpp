@@ -3,14 +3,41 @@
  ** author: Andrea Vedaldi
  **/
 
+/**
+Linhas alteradas ou criadas referentes a tarefa:14,28a39,61
+**/
+
 #include "ball.h"
 
 #include <iostream>
 
-Ball::Ball()
-: r(0.1), x(0), y(0), vx(0.3), vy(-0.1), g(9.8), m(1),
-xmin(-1), xmax(1), ymin(-1), ymax(1)
-{ }
+Ball::Ball(double coordX, double coordY){
+  r = 0.1;
+  x = coordX;
+  y = coordY;
+  vx = 0.3;
+  vy = -0.1;
+  g = 9.8;
+  m = 1;
+  xmin = -1;
+  xmax = 1;
+  ymin = -1;
+  ymax = 1;
+}
+
+double Ball::getCoordx(){
+  return x;
+}
+double Ball::getCoordy(){
+  return y;
+}
+void Ball::setCoordx(double coordX){
+  x=coordX;
+}
+void Ball::setCoordy(double coordY){
+  y=coordY;
+}
+
 
 void Ball::step(double dt)
 {
@@ -19,7 +46,7 @@ void Ball::step(double dt)
   if (xmin + r <= xp && xp <= xmax - r) {
     x = xp ;
   } else {
-    vx = -vx ;
+     vx = -vx ;
   }
   if (ymin + r <= yp && yp <= ymax - r) {
     y = yp ;
@@ -31,5 +58,6 @@ void Ball::step(double dt)
 
 void Ball::display()
 {
-  std::cout<<x<<" "<<y<<std::endl ;
+  std::cout<<Ball::getCoordx()<<" "<<getCoordy()<<std::endl ;
+
 }
