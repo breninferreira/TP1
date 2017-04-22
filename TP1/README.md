@@ -26,17 +26,18 @@ Simular a dinâmica de uma bola que cai e salta sobre a gravidade.
  * GitHub
  * MatLab
  * [Instruções e material do trabalho](http://www.robots.ox.ac.uk/~victor/teaching/labs/b16/)
- 
- <h3> 3 Linha de compilação do programa (command line) </h3>
+  
+  <h3> 3 Diagrama de classes </h3> 
+  (https://plus.google.com/photos/photo/104094965474660776695/6411676940593861314?icm=false&authkey=CPOFxs2xhsa4bg)
+  
+ <h3> 4 Linha de compilação do programa (command line) </h3>
 
 ```
 $ g++ test-ball.cpp ball.cpp -o bola                                                   
 $ ./bola
 
 ```
- <h3> 3.1 Diagrama de classes </h3> 
- 
- <h3> 4 Descrição dos arquivos usados </h3>
+ <h3> 5 Descrição dos arquivos usados </h3>
  
  ***ball.h*** :<p>Contém a inicialização dos atributos e os metódos da classe Ball.</p><br />
  
@@ -46,9 +47,9 @@ $ ./bola
  
  ***test-ball.cpp***:<p>Executa um objeto e imprime as coordenadas do movimento da bola.</p>
  
- <h3>5 Saídas geradas</h3>
+ <h3>6 Saídas geradas</h3>
  
- <h4>5.1 Task2</h4>
+ <h4>6.1 Task2</h4>
  <p>
 0.01 -0.00877778 <br />
 0.02 -0.0284444<br />
