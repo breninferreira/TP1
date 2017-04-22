@@ -11,7 +11,23 @@
 <p>
 Simular a dinâmica de uma bola que cai e salta sobre a gravidade.
 </p>
+<h3>Requisitos</h3>
 
+ * Compilador g++
+ * Editor de texto
+ * Ferramenta de plotting
+ * Ferramenta de versionamento
+ 
+ <h3>Utilizado</h3>
+ 
+ * Terminal linux
+ * Compilador g++ ( intalação: sudo apt-get install g++)
+ * Sublime Text
+ * GitHub
+ * MatLab
+ * [Instruções e material do trabalho](http://www.robots.ox.ac.uk/~victor/teaching/labs/b16/)
+ 
+ 
 <h3>Linha de compilação do programa (command line)</h3>
 
 ```
