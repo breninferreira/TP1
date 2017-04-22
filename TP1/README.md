@@ -49,9 +49,13 @@ $ ./bola
  ***test-ball.cpp***:<p>Executa um objeto e imprime as coordenadas do movimento da bola.</p>
  
  <h3>6 Saídas geradas</h3>
- 
+  <p>A aplicação do salto da bola é implementada no projeto chamado bola. Esse projeto contém
+ quatro fontes : simulation.h, ball.h, ball.cpp e test-ball.cpp.<br />
+ Sua saída consiste na posição da bola em diversos momentos do movimento.
+ </p>
  <h4>6.1 Task2</h4>
  <p>
+Coordenadas:<br />
 0.01 -0.00877778 <br />
 0.02 -0.0284444<br />
 0.03 -0.059<br />
