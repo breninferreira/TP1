@@ -24,7 +24,7 @@ Simular a dinâmica de uma bola que cai e salta sobre a gravidade.
  * Compilador g++ Ubuntu 6.2.0-5ubuntu12 20161005( _intalação: ```sudo apt-get install g++```_ )
  * Sublime Text
  * GitHub
- * MatLab
+ * GNUPlot
  * [Instruções e material do trabalho](http://www.robots.ox.ac.uk/~victor/teaching/labs/b16/)
   
   <h3> 3 Diagrama de classes </h3> 
@@ -33,11 +33,27 @@ Simular a dinâmica de uma bola que cai e salta sobre a gravidade.
   
  <h3> 4 Linha de compilação do programa (command line) </h3>
 
+<p>Coordenadas</p>
+
 ```
 $ g++ test-ball.cpp ball.cpp -o bola                                                   
 $ ./bola
 
 ```
+<p> 
+
+Gráfico 
+
+</p>
+
+```
+$ sudo apt-get install gnuplot
+$ sudo apt-get install gnuplot-x11
+$ gnuplot
+gnuplot > plot 'arquivo.txt'
+
+```
+
  <h3> 5 Descrição dos arquivos usados </h3>
  
  ***ball.h*** :<p>Contém a inicialização dos atributos e os metódos da classe Ball.</p><br />
@@ -156,6 +172,11 @@ Coordenadas:<br />
 0.81 -0.176<br />
 0.8 -0.119444<br />
 0.79 -0.0737778<br />
+</p>
 
+<h4> Task 4 </h4>
+<p> Gráfico</p>
+
+![Gráfico](https://lh3.googleusercontent.com/-0xff9NHZx4k/WPvoYfC-PZI/AAAAAAAAAIY/QZ9j_KAYBx8QKw_Z3vaY9cmozlWm5uhaACL0B/w530-d-h304-p-rw/grafico.png)
 
  
