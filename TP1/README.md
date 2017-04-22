@@ -21,7 +21,7 @@ Simular a dinâmica de uma bola que cai e salta sobre a gravidade.
  <h3>Utilizado</h3>
  
  * Terminal linux
- * Compilador g++ ( _intalação: sudo apt-get install g++_ )
+ * Compilador g++ ( _intalação: ```sudo apt-get install g++``` _ )
  * Sublime Text
  * GitHub
  * MatLab
