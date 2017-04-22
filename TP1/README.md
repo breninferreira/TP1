@@ -28,7 +28,8 @@ Simular a dinâmica de uma bola que cai e salta sobre a gravidade.
  * [Instruções e material do trabalho](http://www.robots.ox.ac.uk/~victor/teaching/labs/b16/)
   
   <h3> 3 Diagrama de classes </h3> 
-  ( https://lh3.googleusercontent.com/-rAt95Ohm7EQ/WPraNPqpEsI/AAAAAAAAAHk/eCpO9VUZfAIRoEqI243L0s_PifvJAsf5wCJoC/w530-h327-p-rw/Capturar.PNG )
+ 
+ ![Diagrama](https://lh3.googleusercontent.com/-rAt95Ohm7EQ/WPraNPqpEsI/AAAAAAAAAHk/eCpO9VUZfAIRoEqI243L0s_PifvJAsf5wCJoC/w530-h327-p-rw/Capturar.PNG )
   
  <h3> 4 Linha de compilação do programa (command line) </h3>
 
