@@ -174,7 +174,7 @@ Coordenadas:<br />
 0.79 -0.0737778<br />
 </p>
 
-<h4> Task 4 </h4>
+<h4> 6.2 Task 4 </h4>
 <p> Gráfico</p>
 
 ![Gráfico](https://lh3.googleusercontent.com/-0xff9NHZx4k/WPvoYfC-PZI/AAAAAAAAAIY/QZ9j_KAYBx8QKw_Z3vaY9cmozlWm5uhaACL0B/w530-d-h304-p-rw/grafico.png)
