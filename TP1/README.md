@@ -60,7 +60,7 @@ gnuplot > plot 'arquivo.txt'
 
 ```
 
-<h4> Parte 2 </h4>
+<h4> Parte 2 </h4><br />
 
  <h3> 5 Descrição dos arquivos usados </h3>
  
@@ -77,7 +77,8 @@ gnuplot > plot 'arquivo.txt'
  <h4>Parte 2</h4>
  
  ***springmass.h***: <p> Contém a inicialização dos atributos e os metódos das classes Vector2, Mass, Spring, SpringMass.</p><br />
- ***springmass.cpp***: <p> Implementação dos métodos das classes.</p> <br />
+ 
+ ***springmass.cpp***: <p> Implementação dos métodos das classes.</p><br />
  
  ***test-springmass.cpp***: <p> Executa o objeto de acordo com a implementação dos métodos e valores colocados.</p> <br />
  
