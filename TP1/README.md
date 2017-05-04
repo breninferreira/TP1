@@ -8,9 +8,13 @@
  </p>
  
 <h3> 1.1 Descrição </h3>
+<h4>Parte 1</h4>
 <p>
 Simular a dinâmica de uma bola que cai e salta sobre a gravidade.
 </p>
+<h4> Parte 2</h4>
+<p>
+Simulação dinâmica onde teremos um sistema de mola consistindo em duas massas e uma mola.
 <h3>2 Requisitos </h3>
 
  * Compilador g++
@@ -32,6 +36,8 @@ Simular a dinâmica de uma bola que cai e salta sobre a gravidade.
  ![Diagrama](https://lh3.googleusercontent.com/-rAt95Ohm7EQ/WPraNPqpEsI/AAAAAAAAAHk/eCpO9VUZfAIRoEqI243L0s_PifvJAsf5wCJoC/w530-h327-p-rw/Capturar.PNG )
   
  <h3> 4 Linha de compilação do programa (command line) </h3>
+ 
+ <h4> Parte 1</h4>
 
 <p>Coordenadas</p>
 
@@ -54,7 +60,11 @@ gnuplot > plot 'arquivo.txt'
 
 ```
 
+<h4> Parte 2 </h4>
+
  <h3> 5 Descrição dos arquivos usados </h3>
+ 
+ <h4>Parte 1</h4>
  
  ***ball.h*** :<p>Contém a inicialização dos atributos e os metódos da classe Ball.</p><br />
  
@@ -62,7 +72,14 @@ gnuplot > plot 'arquivo.txt'
  
  ***simulation.h***:<p>Inicializa os métodos de maneira virtual.</p><br />
  
- ***test-ball.cpp***:<p>Executa um objeto e imprime as coordenadas do movimento da bola.</p>
+ ***test-ball.cpp***:<p>Executa um objeto e imprime as coordenadas do movimento da bola.</p><br />
+ 
+ <h4>Parte 2</h4>
+ 
+ ***springmass.h***: <p> Contém a inicialização dos atributos e os metódos das classes Vector2, Mass, Spring, SpringMass.</p><br />
+ ***springmass.cpp***: <p> Implementação dos métodos das classes.</p> <br />
+ 
+ ***test-springmass.cpp***: <p> Executa o objeto de acordo com a implementação dos métodos e valores colocados.</p> <br />
  
  <h3>6 Saídas geradas</h3>
   <p>A aplicação do salto da bola é implementada no projeto chamado bola. Esse projeto contém
