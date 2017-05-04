@@ -8,13 +8,14 @@
  </p>
  
 <h3> 1.1 Descrição </h3>
-<h4>Parte 1</h4>
+<h4>Parte 1 Bouncing ball</h4>
 <p>
 Simular a dinâmica de uma bola que cai e salta sobre a gravidade.
 </p>
-<h4> Parte 2</h4>
+<h4> Parte 2 Spring-Mass</h4>
 <p>
 Simulação dinâmica onde teremos um sistema de mola consistindo em duas massas e uma mola.
+
 <h3>2 Requisitos </h3>
 
  * Compilador g++
@@ -61,6 +62,15 @@ gnuplot > plot 'arquivo.txt'
 ```
 
 <h4> Parte 2 </h4><br />
+
+<p>Coordenadas das massas</p>
+
+```
+$ g++ test-springmass.cpp springmass.cpp -o springmass                                                   
+$ ./springmass
+
+```
+<p> 
 
  <h3> 5 Descrição dos arquivos usados </h3>
  
