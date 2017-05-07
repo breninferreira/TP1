@@ -14,7 +14,7 @@ Simular a dinâmica de uma bola que cai e salta sobre a gravidade.
 </p>
 <h4> Parte 2 Spring-Mass</h4>
 <p>
-Simulação dinâmica onde teremos um sistema de mola consistindo em duas massas e uma mola.
+Simulação dinâmica onde teremos um sistema de mola consistindo em duas massas e uma mola dentro de uma caixa.
 
 <h3>2 Requisitos </h3>
 
@@ -92,7 +92,7 @@ $ ./springmass
  
  <h4>Parte 2</h4>
  
- ***springmass.h***: <p> Contém a inicialização dos atributos e os metódos das classes Vector2, Mass, Spring, SpringMass.</p><br />
+ ***springmass.h***: <p> Contém a inicialização das classes, dos atributos e os metódos das classes Vector2, Mass, Spring, SpringMass.</p><br />
  
  ***springmass.cpp***: <p> Implementação dos métodos das classes.</p><br />
  
