@@ -34,7 +34,13 @@ Simulação dinâmica onde teremos um sistema de mola consistindo em duas massas
   
   <h3> 3 Diagrama de classes </h3> 
  
- ![Diagrama](https://lh3.googleusercontent.com/-rAt95Ohm7EQ/WPraNPqpEsI/AAAAAAAAAHk/eCpO9VUZfAIRoEqI243L0s_PifvJAsf5wCJoC/w530-h327-p-rw/Capturar.PNG )
+ <h4>Parte 1 </h4>
+ 
+ ![Diagrama](https://github.com/breninferreira/TP1/blob/master/b16-lab/Diagrama.PNG)
+ 
+ <h4>Parte 2 </h4>
+ 
+ ![Diagrama2](https://github.com/breninferreira/TP1/blob/master/b16-lab/Diagrama%20parte%202.PNG)
   
  <h3> 4 Linha de compilação do programa (command line) </h3>
  
@@ -205,6 +211,6 @@ Coordenadas:<br />
 <h4> 6.2 Task 4 </h4>
 <p> Gráfico</p>
 
-![Gráfico](https://lh3.googleusercontent.com/-0xff9NHZx4k/WPvoYfC-PZI/AAAAAAAAAIY/QZ9j_KAYBx8QKw_Z3vaY9cmozlWm5uhaACL0B/w530-d-h304-p-rw/grafico.png)
+![Gráfico](https://github.com/breninferreira/TP1/blob/master/b16-lab/grafico.png)
 
  
