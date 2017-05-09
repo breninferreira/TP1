@@ -213,4 +213,8 @@ Coordenadas:<br />
 
 ![Gráfico](https://github.com/breninferreira/TP1/blob/master/b16-lab/grafico.png)
 
+<h4>6.3 Gráfico parte 2 </h4>
+
+![Gráfico2](https://github.com/breninferreira/TP1/blob/master/b16-lab/sa%C3%ADda2)
+
  
