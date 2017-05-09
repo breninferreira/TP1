@@ -7,7 +7,7 @@
 
 int main(int argc, char** argv)
 {
-  SpringMass springmass ;
+  SpringMass springmass ();
 
   const double mass = 0.05 ;
   const double radius = 0.02 ;
