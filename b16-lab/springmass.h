@@ -3,7 +3,6 @@
  ** author: Andrea Vedaldi
  **/
 
-
 #ifndef __springmass__
 #define __springmass__
 
@@ -36,7 +35,6 @@ inline Vector2 operator- (Vector2 a, Vector2 b) { return Vector2(a.x-b.x, a.y-b.
 inline Vector2 operator* (double a, Vector2 b)  { return Vector2(a*b.x, a*b.y) ; }
 inline Vector2 operator* (Vector2 a, double b)  { return Vector2(a.x*b, a.y*b) ; }
 inline Vector2 operator/ (Vector2 a, double b)  { return Vector2(a.x/b, a.y/b) ; }
-inline Vector2 operator/ (double b, Vector2 a)  { return Vector2(b/a.x, b/a.y);}    // new
 inline double dot(Vector2 a, Vector2 b) { return a.x*b.x + a.y*b.y ; }
 
 /* ---------------------------------------------------------------- */
@@ -59,17 +57,15 @@ public:
   void step(double dt) ;
 
 protected:
-  
-  Vector2 position ;
+  Vector2 position ; 
   Vector2 velocity ;
   Vector2 force ;
   double mass ;
-  double radius ;
+  double radius ; // Assume-se que as massas sao esferas.
 
-  // box limitations: x = horizontal, y= vertical
-  double xmin ; 
-  double xmax ;
-  double ymin ;
+  double xmin ; // Limites, i.e., dimensoes da caixa onde o sistema se encontra,
+  double xmax ; // onde x sao dimensoes horizontais e
+  double ymin ; // y sao dimensoes verticais.
   double ymax ;
 } ;
 
@@ -80,8 +76,7 @@ protected:
 class Spring
 {
 public:
-  Spring();
-  Spring(Mass *mass1, Mass *mass2, double naturalLength, double stiffness, double damping = 0.01) ;
+  Spring(Mass * mass1, Mass * mass2, double naturalLength, double stiffness, double damping = 0.01) ;
   Mass * getMass1() const ;
   Mass * getMass2() const ;
   Vector2 getForce() const ;
@@ -89,8 +84,12 @@ public:
   double getEnergy() const ;
 
 protected:
-
-/* INCOMPLETE: TYPE YOUR CODE HERE */
+  /* COMPLETE: 
+     Insira atributos protegidos que permitem calcular a forca 
+     e a energia de uma mola. Dica: veja o construtor acima.
+     Adicione tambem 2 ponteiros para objetos do tipo Mass 
+     (um para cada extremidade da mola).
+   */
   Mass *mass1;
   Mass *mass2;
   double naturalLength;
@@ -105,39 +104,45 @@ protected:
 class SpringMass : public Simulation
 {
 public:
-  SpringMass(Mass *mass1, Mass *mass2, double gravity = MOON_GRAVITY) ;
-  Mass* getMass1() const;
-  Mass* getMass2() const;
-  Spring* getSpring(Mass mass1, Mass mass2);
-
+  SpringMass(Mass * mass1, Mass * mass2, Spring * spring,double gravity = MOON_GRAVITY) ;
   void step(double dt) ;
   void display() ;
   double getEnergy() const ;
 
-  int addMass(Mass *mass1, Mass *mass2);
-  int addSpring(Mass *mass1, Mass *mass2, Spring *spring, double naturalLength, double stiffness, double damping = 0.01);
+  /* COMPLETE: 
+     Adicione dois metodos que permitem construir o sistema,
+     - um para adicionar uma massa, que teria como entrada
+       um objeto da classe Mass, e
+     - outro para adicionar uma mola, que teria como entrada
+       - dois indices (um para cada massa que sera 
+         conectada a esta mola);
+       - os outros parametros necessarios para se "construir"
+         uma mola.       
+   */
+  Mass *getMass1()const;
+  Mass *getMass2()const;
+  Spring *getSpring(Mass mass1,Mass mass2)const;
 
 
-protected:
+
+//protected:
   double gravity ;
-  double dt;
-  Mass m;
 
+  /* COMPLETE: 
+     Defina dois tipos de vetores, 
+     - um para massas e 
+     - outro para molas.
+     Para definir vetores de tipos, use:
+     typedef std::vector<NomeDaClasse> nome_do_tipo_t;
+     Adicione, como atributo:
+     - um vetor de massas e
+     - um vetor de molas.
+     Total de codigo para esta lacuna: 4 linhas
+   */
   Mass *mass1;
   Mass *mass2;
   Spring *spring;
-  double naturalLength;
-  double stiffness;
-  double damping;
-
-  typedef std::vector<Mass> masses_t;
-  typedef std::vector<Spring *> springs_t;
-
-
-  masses_t masses;
-  springs_t springs;
-
 } ;
 
-
 #endif /* defined(__springmass__) */
+
