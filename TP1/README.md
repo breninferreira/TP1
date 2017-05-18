@@ -15,6 +15,9 @@ Simular a dinâmica de uma bola que cai e salta sobre a gravidade.
 <h4> Parte 2 Spring-Mass</h4>
 <p>
 Simulação dinâmica onde teremos um sistema de mola consistindo em duas massas e uma mola dentro de uma caixa.
+<h4> Parte 3 Graphics</h4>
+<p>
+Gerar gráficos com movimentos se baseando nas configuração dos objetos.
 
 <h3>2 Requisitos </h3>
 
@@ -22,6 +25,7 @@ Simulação dinâmica onde teremos um sistema de mola consistindo em duas massas
  * Editor de texto
  * Ferramenta de plotting
  * Ferramenta de versionamento
+ * OpenGL/Glut
  
  <h3> 2.1 Utilizado </h3>
  
@@ -31,6 +35,7 @@ Simulação dinâmica onde teremos um sistema de mola consistindo em duas massas
  * GitHub
  * GNUPlot
  * [Instruções e material do trabalho](http://www.robots.ox.ac.uk/~victor/teaching/labs/b16/)
+ * OpenGL/Glut
   
   <h3> 3 Diagrama de classes </h3> 
  
@@ -80,7 +85,7 @@ $ ./springmass
 ```
 <p> 
 
-h4> Parte 3 </h4><br />
+<h4> Parte 3 </h4><br />
 
 ```
 $ g++ springmass.cpp graphics.cpp test-springmass-graphic.cpp -lGL - lGLU -lglu -o graphic                                              
@@ -111,13 +116,11 @@ $ ./graphic
  
  <h4>Parte 3</h4>
  
- ***graphics.h*** <p></p><br />
+ ***graphics.h*** <p>Definição de métodos das classe e parametros das classes que utilizam o OpenGL/Glut.</p><br />
  
- ***graphics.cpp***<p></p><br />
+ ***graphics.cpp***<p>Implementação do graphics.h</p><br />
  
- ***test-ball-graphics.cpp***<p></p><br />
- 
- ***test-springmass-graphics.cpp***<p></p><br />
+ ***test-springmass-graphics.cpp***<p> Implementa a classe SpringMassDrawable, que herda métodos da SpringMass , aplicando as configurações da figura e objetos necessário para gerar o a figura e seu movimento.</p><br />
 
  
  <h3>6 Saídas geradas</h3>
@@ -341,5 +344,13 @@ Coordenadas:<br />
 <h4>6.4 Gráfico parte 2 </h4>
 
 ![Gráfico2](https://github.com/breninferreira/TP1/blob/master/b16-lab/sa%C3%ADda2)
+
+<h4>6.5 Saída parte 3</h4>
+
+![](https://github.com/breninferreira/TP1/blob/master/b16-lab/parte3.PNG)
+
+
+![grafico3](https://github.com/breninferreira/TP1/blob/master/b16-lab/parte3-1.PNG)
+
 
  
