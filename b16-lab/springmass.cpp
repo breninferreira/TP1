@@ -106,37 +106,32 @@ void Mass::step(double dt)
     Vector2 aceleracao;
     Vector2 velocidade2;
 
-    aceleracao.x=(getForce().x)/getMass();
-    aceleracao.y=(getForce().y)/getMass();
     
-    velocidade2.x=getVelocity().x + (aceleracao.x*dt);
-    velocidade2.y=getVelocity().y + (aceleracao.y*dt);
+    aceleracao.x = (getForce().x)/getMass();
+    aceleracao.y = (getForce().y)/getMass();
 
-    posicao2.x=getPosition().x + (getVelocity().x * dt)+((aceleracao.x * dt * dt)/2);
-    posicao2.x=getPosition().y + (getVelocity().y * dt)+((aceleracao.y * dt * dt)/2);
+    
+    posicao2.x = getPosition().x + (getVelocity().x * dt) - (0.5 * aceleracao.x * dt * dt);
+    posicao2.y = getPosition().y + (getVelocity().y * dt) - (0.5 * aceleracao.y * dt * dt);
 
+    
+    velocidade2.x = getVelocity().x + aceleracao.x * dt;
+    velocidade2.y = getVelocity().y + aceleracao.y * dt;
 
     if (xmin + getRadius() <= posicao2.x && posicao2.x <= xmax - getRadius()) {
-        position.x=posicao2.x;
-        velocity.x=velocidade2.x;
-
-    }else{
-      velocity.x= -velocity.x;
-
+      position.x = posicao2.x;
+      velocity.x = velocidade2.x;
+    } else {
+      velocity.x = -velocity.x;
     }
 
     if (ymin + getRadius() <= posicao2.y && posicao2.y <= ymax - getRadius()) {
-        position.y=posicao2.y;
-        velocity.y=velocidade2.y;
-
-    }else{
-      velocity.y= -velocity.y;
-
+      position.y = posicao2.y;
+      velocity.y = velocidade2.y;
+    } else {
+      velocity.y = -velocity.y;
     }
-  }
-
-
-
+}
 
 /* ---------------------------------------------------------------- */
 // class Spring
