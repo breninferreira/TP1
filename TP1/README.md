@@ -41,6 +41,8 @@ Simulação dinâmica onde teremos um sistema de mola consistindo em duas massas
  <h4>Parte 2 </h4>
  
  ![Diagrama2](https://github.com/breninferreira/TP1/blob/master/b16-lab/Diagrama%20parte%202.PNG)
+ 
+ ![](https://github.com/breninferreira/TP1/blob/master/b16-lab/diagr.PNG)
   
  <h3> 4 Linha de compilação do programa (command line) </h3>
  
@@ -78,6 +80,15 @@ $ ./springmass
 ```
 <p> 
 
+h4> Parte 3 </h4><br />
+
+```
+$ g++ springmass.cpp graphics.cpp test-springmass-graphic.cpp -lGL - lGLU -lglu -o graphic                                              
+$ ./graphic
+
+```
+<p> 
+
  <h3> 5 Descrição dos arquivos usados </h3>
  
  <h4>Parte 1</h4>
@@ -97,6 +108,17 @@ $ ./springmass
  ***springmass.cpp***: <p> Implementação dos métodos das classes.</p><br />
  
  ***test-springmass.cpp***: <p> Executa o objeto de acordo com a implementação dos métodos e valores colocados.</p> <br />
+ 
+ <h4>Parte 3</h4>
+ 
+ ***graphics.h*** <p></p><br />
+ 
+ ***graphics.cpp***<p></p><br />
+ 
+ ***test-ball-graphics.cpp***<p></p><br />
+ 
+ ***test-springmass-graphics.cpp***<p></p><br />
+
  
  <h3>6 Saídas geradas</h3>
   <p>A aplicação do salto da bola é implementada no projeto chamado bola. Esse projeto contém
