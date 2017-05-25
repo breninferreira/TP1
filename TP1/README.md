@@ -48,23 +48,25 @@ Gerar gráficos com movimentos se baseando nas configuração dos objetos.
  ![Diagrama2](https://github.com/breninferreira/TP1/blob/master/b16-lab/Diagrama%20parte%202.PNG)
  
  ![](https://github.com/breninferreira/TP1/blob/master/b16-lab/diagr.PNG)
+ 
+ ![Diagrama3](https://github.com/breninferreira/TP1/blob/master/b16-lab/Diagrama%20de%20sequencia.png)
   
  <h3> 4 Linha de compilação do programa (command line) </h3>
  
  <h4> Parte 1</h4>
 
-<p>Coordenadas</p>
+<p>Coordenadas
+
 
 ```
 $ g++ test-ball.cpp ball.cpp -o bola                                                   
 $ ./bola
 
 ```
-<p> 
 
 Gráfico 
 
-</p>
+
 
 ```
 $ sudo apt-get install gnuplot
@@ -74,25 +76,29 @@ gnuplot > plot 'arquivo.txt'
 
 ```
 
+</p>
+
 <h4> Parte 2 </h4><br />
 
-<p>Coordenadas das massas</p>
+<p>Coordenadas das massas
+
 
 ```
 $ g++ test-springmass.cpp springmass.cpp -o springmass                                                   
 $ ./springmass
 
 ```
-<p> 
+ 
 
 <h4> Parte 3 </h4><br />
+
 
 ```
 $ g++ springmass.cpp graphics.cpp test-springmass-graphic.cpp -lGL - lGLU -lglu -o graphic                                              
 $ ./graphic
 
 ```
-<p> 
+</p> 
 
  <h3> 5 Descrição dos arquivos usados </h3>
  
